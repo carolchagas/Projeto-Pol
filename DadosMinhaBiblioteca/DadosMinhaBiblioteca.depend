@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1463627707 source:d:\carol\caroline\ufsm\projeto pol\dadosminhabiblioteca\main.c
+	<stdio.h>
+	<stdlib.h>
+	<String.h>
+
