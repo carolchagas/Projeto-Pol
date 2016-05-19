@@ -11,7 +11,7 @@ int main()
 {
     FILE *fileR, *fileW;
 	fileR = fopen("ufsm2016.txt", "r");
-	fileW = fopen("dados.txt", "w");
+	fileW = fopen("dados.arff", "w");
 
 	char email[60], linha [300], emailAnt[60], antLivro[20] = " ";
 	int x = 0, diasOn = 0, nextDiasOn = 0, paginas = 0, nextPages = 0, qtdLivros = 0, nextQtdLivros = 0;
@@ -55,7 +55,7 @@ int main()
 
         if( strcmp(email, emailAnt) )
         {
-            fileW = fopen("dados.txt", "a");
+            fileW = fopen("dados.arff", "a");
             //printf("DADOS:  %s, %d, %d, %d, %d \n", emailAnt, diasOn, paginas, 0, qtdLivros);
             fprintf(fileW, "%s, %d, %d, %d, %d", emailAnt, diasOn, paginas, 0, qtdLivros);
             fprintf(fileW, " \n");
